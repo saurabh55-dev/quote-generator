@@ -1,0 +1,97 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Light/Dark Mode Styles */
+.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-mode .quote-container {
+    background-color: #444;
+}
+
+/* Quote Display */
+.quote-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    font-style: italic;
+    text-align: right;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.category-selector, .display-controls {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+}
