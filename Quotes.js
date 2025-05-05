@@ -41,6 +41,7 @@ function init() {
 
     // Load initial quotes
     handleCategoryChange();
+    restoreDarkMode();
 }
 
 // Handle category change
@@ -86,7 +87,11 @@ function showNextQuote() {
 }
 
 function showRandomQuote() {
-    if(filteredQuotes.length == 0) return;
+    if(filteredQuotes.length == 0){
+        quoteText.textContent = "Please select a category first.";
+        quoteAuthor.textContent = "";
+        return;
+    }
     const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
     currentQuoteIndex = randomIndex;
     displayQuote(filteredQuotes[currentQuoteIndex]);
@@ -97,6 +102,15 @@ function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     const isDarkMode = document.body.classList.contains("dark-mode");
     darkModeToggle.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+    localStorage.setItem("darkMode", isDarkMode);
+}
+
+function restoreDarkMode(){
+    const isDark = localStorage.getItem("darkMode") === "true";
+    if(isDark){
+        document.body.classList.add("dark-mode");
+        darkModeToggle.textContent = "Light Mode";
+    }
 }
 
 // Font size controls
