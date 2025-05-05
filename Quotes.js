@@ -1,14 +1,105 @@
 // Quote data
 const quotes = {
     science: [
-        {text: "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.", author: "Albert Einstein"},
-        {text: "Science is not only a disciple of reason but also one of romance and passion.", author: "Stephen Hawking"},
-        {text: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.", author: "Marie Curie"}
+        {
+            text: "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.",
+             author: "Albert Einstein"
+        },
+        {
+            text: "Science is not only a disciple of reason but also one of romance and passion.", author: "Stephen Hawking"
+        },
+        {
+            text: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+             author: "Marie Curie"
+        },
+        {
+            text: "The important thing is to never stop questioning.",
+            author: "Albert Einstein"
+        },
+        {
+            text: "Somewhere, something incredible is waiting to be known.",
+            author: "Carl Sagan"
+        },
+        {
+            text: "Science is a way of thinking much more than it is a body of knowledge.",
+            author: "Carl Sagan"
+        },
+        {
+            text: "If I have seen further it is by standing on the shoulders of giants.",
+            author: "Isaac Newton"
+        },
+        {
+            text: "The good thing about science is that it's true whether or not you believe in it.",
+            author: "Neil deGrasse Tyson"
+        }
     ],
     inspiration: [
-        {text: "The only way to do great work is to love what you do.", author: "Steve Jobs"},
-        {text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill"},
-        {text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt"}
+        {
+            text: "The only way to do great work is to love what you do.", 
+            author: "Steve Jobs"
+        },
+        {
+            text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", 
+            author: "Winston Churchill"
+        },
+        {
+            text: "Believe you can and you're halfway there.", 
+            author: "Theodore Roosevelt"
+        },
+        {
+            text: "The mind is everything. What you think you become.",
+            author: "Buddha"
+        },
+        {
+            text: "Your time is limited, so don’t waste it living someone else’s life.",
+            author: "Steve Jobs"
+        },
+        {
+            text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            author: "Winston Churchill"
+        },
+        {
+            text: "Believe you can and you're halfway there.",
+            author: "Theodore Roosevelt"
+        },
+        {
+            text: "It always seems impossible until it’s done.",
+            author: "Nelson Mandela"
+        }
+    ],
+    psychology: [
+        {
+            text: "The mind is everything. What you think you become.", 
+            author: "Buddha"
+        },
+        {
+            text: "You cannot control what happens to you, but you can control your attitude toward what happens to you.", 
+            author: "Brian Tracy"
+        },
+        {
+            text: "The greatest discovery of my generation is that a human being can alter his life by altering his attitude.", 
+            author: "William James"
+        },
+        {
+            text: "The greatest discovery of my generation is that a human being can alter his life by altering his attitudes.",
+            author: "William James"
+        },
+        {
+            text: "Until you make the unconscious conscious, it will direct your life and you will call it fate.",
+            author: "Carl Jung"
+        },
+        {
+            text: "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+            author: "Aristotle"
+        },
+        {
+            text: "Happiness is not something ready made. It comes from your own actions.",
+            author: "Dalai Lama"
+        },
+        {
+            text: "Knowing yourself is the beginning of all wisdom.",
+            author: "Aristotle"
+        }
     ]
 };
 
