@@ -5,12 +5,15 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 header {
@@ -43,6 +46,11 @@ header {
     animation: fadeIn 0.5s ease-in;
 }
 
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .quote-text {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -59,11 +67,14 @@ header {
     justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .category-selector, .display-controls {
     display: flex;
     align-items: center;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -94,6 +105,8 @@ button {
     margin: 0 5px;
     border-radius: 4px;
     cursor: pointer;
+    white-space: nowrap; /* Prevent long buttons from wrapping weirdly */
+    flex-shrink: 0; /* Prevent squeezing in flex rows */
 }
 
 button:hover {
@@ -118,7 +131,6 @@ button:hover {
     }
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+@media (max-width: 400px) {
+    button {width: 100%;}
 }
