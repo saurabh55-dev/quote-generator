@@ -2,10 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     transition: background-color 0.3s, color 0.3s;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 .container {
@@ -106,8 +104,7 @@ button {
     margin: 0 5px;
     border-radius: 4px;
     cursor: pointer;
-    white-space: nowrap; /* Prevent long buttons from wrapping weirdly */
-    flex-shrink: 0; /* Prevent squeezing in flex rows */
+    white-space: nowrap;
 }
 
 button:hover {
